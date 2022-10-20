@@ -14,11 +14,11 @@ const eta = parseInt(prompt("quanti anni hai?"));
 const prezzoBiglietto = (kmPasseggero * 0.21);
 
 if(eta < 18 ) {
-    console.log((prezzoBiglietto * 0.8).toFixed(2));
+    console.log(Math.round((prezzoBiglietto * 0.8) * 100) / 100);
 } else if (eta > 65){
-    console.log((prezzoBiglietto * 0.6).toFixed(2));
+    console.log(Math.round((prezzoBiglietto * 0.6) * 100) / 100);
 } else {
-    console.log(prezzoBiglietto.toFixed(2));
+    console.log(Math.round(prezzoBiglietto * 100) / 100);
 } 
 
 
